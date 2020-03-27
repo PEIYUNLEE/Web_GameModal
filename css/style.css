@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background-size: cover;
+}
+.game-container{
+    width:930px;
+
+}
+.game{
+    width: 930px;
+    height: 550px;
+}
+.home{
+    width: 222px;
+    height: 113px;
+    background-image: url(../images/games/home_button.png);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.scene{
+    width: 692px;
+    height: 368px;
+}
+.scene0{
+    padding: 70px 25px 0;
+    background-image: url(../images/games/games_place.png);
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+.scene0 .scene-item{
+    width: 190px;
+    height: 100px;
+    list-style-type: none;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+.scene .scene-item:hover{
+    transform: scale(1.1);
+    transition: all 0.25s;
+}
+
+.scene-item-0-1{
+    background-image: url(../images/games/restaurant.png);
+    grid-column-start: 2;
+}
+.scene-item-0-2{
+    background-image: url(../images/games/kitchen.png);
+}
+.scene-item-0-3{
+    background-image: url(../images/games/livingroom.png);
+}
+.scene-item-0-4{
+    background-image: url(../images/games/bathroom.png);
+}
+.scene-item-0-5{
+    background-image: url(../images/games/bedroom.png);
+}
+
+/* scene1 */
+.scene1{
+    padding: 70px 25px 0;
+    background-image: url(../images/games/restaurant.png);
+}
+.left{
+    height: 368px;
+    padding-top: 10px;
+}
+.answer{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.answer-item{
+    width: 58px;
+    height: 57px;
+}
+.intro-text{
+    width: 188px;
+    height: 122px;
+    background-image: url(../images/games/games_hint.svg);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.answer-item-1-1{
+    background-image: url(../images/games/ic_towel.png);
+}
+.answer-item-1-2{
+    background-image: url(../images/games/ic_pot.png);
+}
+.answer-item-1-3{
+    background-image: url(../images/games/ic_bottle.png);
+}
+
+.scene-1up .scene-item{
+    position: absolute;
+    cursor: pointer;
+}
+
+
+.scene-1up .scene-item{
+    list-style-type: none;
+    cursor: pointer;
+    transition: all 0.25s;
+    position: absolute;
+}
+.scene-item-1-1{
+    background-image: url(../images/games/img_red_bg.png);
+    width: 218px;
+    height: 29px;
+    left: 31.25%;
+    bottom: 30%;
+}
+.scene-item-1-2{
+    background-image: url(../images/games/img_pot.png);
+    width: 33px;
+    height: 41px;
+    left: 57%;
+    bottom: 37.7%;
+}
+.scene-item-1-3
+{
+    width: 26px;
+    height: 47px;
+    background-image: url(../images/games/img_bottle.png);
+    left: 21.5%;
+    top: 22%;
+}
