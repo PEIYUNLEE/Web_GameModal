@@ -63,7 +63,6 @@
 
 /* scene1 */
 .scene1{
-    padding: 70px 25px 0;
     background-image: url(../images/games/restaurant.png);
 }
 .left{
@@ -132,4 +131,167 @@
     background-image: url(../images/games/img_bottle.png);
     left: 21.5%;
     top: 22%;
+}
+
+/* scene2 */
+.scene2{
+    background-image: url(../images/games/kitchen.png);
+}
+.answer-item-2-1{
+    background-image: url(../images/games/ic_paint.png);
+}
+.answer-item-2-2{
+    background-image: url(../images/games/ic_faucet.png);
+}
+.answer-item-2-3{
+    background-image: url(../images/games/ic_milkbox.png);
+}
+
+
+.scene-item-2-1{
+    background-image: url(../images/games/img_brick.png);
+    width: 125px;
+    height: 55px;
+    left: 46.5%;
+    top: 19%;
+}
+.scene-item-2-2{
+    background-image: url(../images/games/img_faucet.png);
+    width: 56px;
+    height: 70px;
+    left: 28%;
+    top: 27%;
+}
+.scene-item-2-3
+{
+    width: 72px;
+    height: 28px;
+    background-image: url(../images/games/img_cups.png);
+    left: 50%;
+    top: 61.25%;
+}
+
+
+/* scene3 */
+.scene3{
+    background-image: url(../images/games/livingroom_0.png);
+}
+.answer-item-3-1{
+    background-image: url(../images/games/ic_raincoat.png);
+}
+.answer-item-3-2{
+    background-image: url(../images/games/ic_car.png);
+}
+.answer-item-3-3{
+    background-image: url(../images/games/ic_tube.png);
+}
+
+
+.scene-item-3-1{
+    background-image: url(../images/games/img_raincoat.png);
+    width: 90px;
+    height: 104px;
+    right: 5%;
+    bottom: 12%;
+}
+.scene-item-3-2{
+    background-image: url(../images/games/img_red_car.png);
+    width: 39px;
+    height: 20px;
+    left: 60%;
+    bottom: 25%;
+}
+.scene-item-3-3
+{
+    width: 51px;
+    height: 26px;
+    background-image: url(../images/games/img_texi.png);
+    left: 54%;
+    top: 34.75%;
+}
+.scene-item-3-4
+{
+    width: 113px;
+    height: 9px;
+    background-image: url(../images/games/img_tube.png);
+    left: 44.7%;
+    top: 7%;
+}
+
+
+/* scene4 */
+.scene4{
+    background-image: url(../images/games/bathroom.png);
+}
+.answer-item-4-1{
+    background-image: url(../images/games/ic_duck.png);
+}
+.answer-item-4-2{
+    background-image: url(../images/games/ic_towel.png);
+}
+.answer-item-4-3{
+    background-image: url(../images/games/ic_plasic.png);
+}
+
+
+.scene-item-4-1{
+    background-image: url(../images/games/img_duck.png);
+    width: 31px;
+    height: 26px;
+    right: 35%;
+    top: 37%;
+}
+.scene-item-4-2{
+    background-image: url(../images/games/img_book.png);
+    width: 57px;
+    height: 78px;
+    right: 8.5%;
+    top: 19.5%;
+}
+.scene-item-4-3
+{
+    width: 20px;
+    height: 34px;
+    background-image: url(../images/games/img_plasic_bottle.png);
+    left: 16%;
+    bottom: 17%;
+}
+
+
+/* scene5 */
+.scene5{
+    background-image: url(../images/games/bedroom_0.png);
+}
+.answer-item-5-1{
+    background-image: url(../images/games/ic_bamboomat.png);
+}
+.answer-item-5-2{
+    background-image: url(../images/games/ic_brick.png);
+}
+.answer-item-5-3{
+    background-image: url(../images/games/ic_babywrap.png);
+}
+
+
+.scene-item-5-1{
+    background-image: url(../images/games/img_bamboo_mat.png);
+    width: 90px;
+    height: 43px;
+    left: 15%;
+    top: 40%;
+}
+.scene-item-5-2{
+    background-image: url(../images/games/img_find_hint.png);
+    width: 103px;
+    height: 48px;
+    right: 28%;
+    bottom: 27%;
+}
+.scene-item-5-3
+{
+    width: 66px;
+    height: 54px;
+    background-image: url(../images/games/img_baby_clothes.png);
+    right: 25.5%;
+    top: 6%;
 }
