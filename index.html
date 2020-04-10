@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/game-modal.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -17,6 +18,7 @@
 </head>
 
 <body>
+    <div class="bg"></div>
     <div class="game-container">
         <div class="game-title">遊戲互動</div>
         <div class="game-info">
@@ -45,9 +47,10 @@
                 </ul>
             </div>
             <ul class="scene scene1 scene-1up float-right">
-                <li class="scene-item scene-item-1-1" title="塑膠軟質桌墊"></li>
-                <li class="scene-item scene-item-1-2" title="金屬罐"></li>
-                <li class="scene-item scene-item-1-3" title="玻璃、陶瓷器、施珐瑯"></li>
+                <li class="scene-item scene-item-1-1" title="塑膠軟質桌墊" data-toggle="modal" data-target="#Modal-1-1"></li>
+                <li class="scene-item scene-item-1-2" title="金屬罐" data-toggle="modal" data-target="#Modal-1-2"></li>
+                <li class="scene-item scene-item-1-3" title="玻璃、陶瓷器、施珐瑯" data-toggle="modal" data-target="#Modal-1-3">
+                </li>
             </ul>
         </div>
         <div class="game game2 clearfix">
@@ -125,6 +128,84 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="Modal-1-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 d-flex justify-content-center">
+                    <div class="aaa">
+                        <h5 class="modal-title" id="exampleModalLabel">塑膠材質桌墊</h5>
+                        <div class="subTitle">由什麼化學物質可能在塑膠軟質桌墊裡找到</div>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body d-flex justify-content-center">
+                    <ul>
+                        <li id="btn-1-1-1" class="d-block btn btn-info border-0 btn_modal" data-toggle="modal" data-target="#Modal-sus-1-1">甲苯</li>
+                        <li id="btn-1-1-2" class="d-block btn btn-info border-0 btn_modal" data-toggle="modal" data-target="#Modal-fail">氯黴素</li>
+                        <li id="btn-1-1-3" class="d-block btn btn-info border-0 btn_modal" data-toggle="modal" data-target="#Modal-fail">多環芳香烴</li>
+                        <li id="btn-1-1-4" class="d-block btn btn-info border-0 btn_modal" data-toggle="modal" data-target="#Modal-fail">乙烯</li>
+                    </ul>
+                </div>
+                <div class="modal-footer d-none">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="Modal-fail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content border-0">
+                <div class="modal-header rounded border-0 d-flex justify-content-center">
+                    <div class="aaa d-block">
+                        <h5 class="modal-title" id="exampleModalLabel">&nbsp嗚~失敗~</h5>
+                        <div class="subTitle">請再接再厲</div>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body d-none">
+                    ...
+                </div>
+                <div class="modal-footer d-none">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade Modal-sus" id="Modal-sus-1-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content border-0">
+                <div class="modal-header rounded border-0 d-flex justify-content-center">
+                    <div class="aaa d-block">
+                        <h5 class="modal-title" id="exampleModalLabel">&nbsp&nbsp答對了！</h5>
+                        <div class="subTitle">塑膠軟質桌墊 - 甲苯</div>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body d-none">
+                    ...
+                </div>
+                <div class="modal-footer d-none">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery.js"></script>
